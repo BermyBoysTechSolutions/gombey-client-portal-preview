@@ -30,7 +30,7 @@
     if (!title || !details) return;
     const type = document.querySelector('#request-type').value;
     const item = document.createElement('div'); item.className = 'request-item';
-    const icon = document.createElement('div'); icon.className = 'request-icon'; icon.textContent = '↗';
+    const icon = document.createElement('div'); icon.className = 'request-icon'; icon.innerHTML = "\n<svg aria-hidden=\"true\" focusable=\"false\" class=\"lucide-icon lucide lucide-arrow-up-right\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" ><path d=\"M7 7h10v10\" /><path d=\"M7 17 17 7\" /></svg>";
     const content = document.createElement('div');
     const heading = document.createElement('h3'); heading.textContent = title;
     const description = document.createElement('p'); description.textContent = `Just added · ${type} · Preview only`;
